@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Kubernetes Resource Usage Report</h2>
+
+<table>
+  <tr>
+    <th>Namespace</th>
+    <th>quotaname</th>
+    <th>limits.cpu.used</th>
+    <th>limits.cpu.hard</th>
+    <th>limits.memory.used</th>
+    <th>limits.memory.hard</th>
+    <th>requests.cpu.used</th>
+    <th>requests.cpu.hard</th>
+    <th>requests.memory.used</th>
+    <th>requests.memory.hard</th>
+  </tr>
+<tr><td>default</td><td>empty</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>kube-public</td><td>empty</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>kube-system</td><td>empty</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>quota-mem-cpu-example</td><td>mem-cpu-demo</td><td>800m</td><td>2</td><td>800Mi</td><td>2Gi</td><td>400m</td><td>1</td><td>600Mi</td><td>1Gi</td></tr>
+<tr><td>rook-ceph</td><td>empty</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>rook-ceph-system</td><td>empty</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</table>
+</body>
+</html>
